@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="false">
+    <test name="mailRuTest">
+        <classes>
+            <class name="LoginPageTest"/>
+            <class name="SpamPageTest"/>
+            <class name="SendMessageTest"/>
+        </classes>
+    </test>
+    <test name="cucumberTest">
+        <classes>
+            <class name="MarkWithFlagsTest"/>
+            <class name="UncheckWithFlagsTest"/>
+            <class name="MessageToSpamTest"/>
+        </classes>
+    </test>
+    <test name="apiTest">
+        <classes>
+            <class name="api.WallTest"/>
+        </classes>
+    </test>
+</suite>
