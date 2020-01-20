@@ -1,0 +1,77 @@
+12:37:25,086  INFO main Wall:postMessage:36 - Message is posted
+12:39:37,107  INFO main Wall:editMessage:51 - Message is edited
+12:39:37,481  INFO main Wall:deleteMessage:65 - Message is deleted
+12:59:52,581  INFO main Wall:postMessage:36 - Message is posted
+12:59:52,909  INFO main Wall:editMessage:51 - Message is edited
+12:59:53,411  INFO main Wall:deleteMessage:65 - Message is deleted
+13:00:25,289  INFO main Wall:postMessage:36 - Message is posted
+13:00:25,613  INFO main Wall:editMessage:51 - Message is edited
+13:00:26,080  INFO main Wall:deleteMessage:65 - Message is deleted
+14:11:29,033  INFO main Wall:postMessage:36 - Message is posted
+14:11:29,209  INFO main Wall:editMessage:51 - Message is edited
+14:11:29,505  INFO main Wall:deleteMessage:65 - Message is deleted
+15:22:17,779  INFO main Wall:postMessage:36 - Message is posted
+15:22:17,994  INFO main Wall:editMessage:51 - Message is edited
+15:22:18,269  INFO main Wall:deleteMessage:65 - Message is deleted
+15:24:19,412  INFO main Wall:postMessage:36 - Message is posted
+15:24:19,607  INFO main Wall:editMessage:51 - Message is edited
+15:24:19,940  INFO main Wall:deleteMessage:65 - Message is deleted
+15:26:48,957  INFO main Wall:postMessage:36 - Message is posted
+15:26:49,472  INFO main Wall:editMessage:51 - Message is edited
+15:26:49,866  INFO main Wall:deleteMessage:65 - Message is deleted
+15:28:17,426  INFO main Wall:postMessage:36 - Message is posted
+15:28:17,760  INFO main Wall:editMessage:51 - Message is edited
+15:28:18,393  INFO main Wall:deleteMessage:65 - Message is deleted
+15:28:57,875  INFO main Wall:postMessage:36 - Message is posted
+15:28:58,238  INFO main Wall:editMessage:51 - Message is edited
+15:28:58,679  INFO main Wall:deleteMessage:65 - Message is deleted
+15:36:29,536  INFO main Wall:postMessage:36 - Message is posted
+15:36:29,947  INFO main Wall:editMessage:51 - Message is edited
+15:36:30,409  INFO main Wall:deleteMessage:65 - Message is deleted
+15:39:51,325  INFO main Wall:postMessage:36 - Message is posted
+15:39:51,741  INFO main Wall:editMessage:51 - Message is edited
+15:39:52,157  INFO main Wall:deleteMessage:65 - Message is deleted
+16:13:46,673  INFO main Wall:postMessage:36 - Message is posted
+16:13:47,063  INFO main Wall:editMessage:51 - Message is edited
+16:13:47,459  INFO main Wall:deleteMessage:65 - Message is deleted
+16:14:32,222  INFO main LoginPage:loadMainPage:45 - load main page
+16:14:33,673  INFO main User:setUserDataFromDataBase:40 - data is got from DataBase
+16:14:35,778  INFO main LoginPage:loginAsCorrectUser:52 - logged as correct user
+16:14:52,276  INFO main LoginPage:loadMainPage:45 - load main page
+16:14:52,514  INFO main User:setUserDataFromDataBase:40 - data is got from DataBase
+16:14:52,784  INFO main LoginPage:authorizationWithWrongLogin:58 - try to login with wrong login
+16:15:05,457  INFO main LoginPage:loadMainPage:45 - load main page
+16:15:05,505  INFO main User:setUserDataFromDataBase:40 - data is got from DataBase
+16:15:06,575  INFO main LoginPage:authorizationWithWrongPassword:65 - try to login with wrong password
+16:15:19,100  INFO main LoginPage:loadMainPage:45 - load main page
+16:15:19,172  INFO main User:setUserDataFromDataBase:40 - data is got from DataBase
+16:15:20,380  INFO main LoginPage:loginAsCorrectUser:52 - logged as correct user
+16:15:23,212  INFO main SpamPage:returnMessageFromSpam:37 - click spam button
+16:15:46,396  INFO main Wall:postMessage:36 - Message is posted
+16:15:46,762  INFO main Wall:editMessage:51 - Message is edited
+16:15:47,208  INFO main Wall:deleteMessage:65 - Message is deleted
+16:55:07,056  INFO main LoginPage:loadMainPage:45 - load main page
+16:55:12,267  INFO main User:setUserDataFromDataBase:40 - data is got from DataBase
+16:55:20,935  INFO main LoginPage:loginAsCorrectUser:52 - logged as correct user
+16:55:43,121  INFO main LoginPage:loadMainPage:45 - load main page
+16:55:43,185  INFO main User:setUserDataFromDataBase:40 - data is got from DataBase
+16:55:43,471  INFO main LoginPage:authorizationWithWrongLogin:58 - try to login with wrong login
+16:55:55,723  INFO main LoginPage:loadMainPage:45 - load main page
+16:55:55,774  INFO main User:setUserDataFromDataBase:40 - data is got from DataBase
+16:55:56,843  INFO main LoginPage:authorizationWithWrongPassword:65 - try to login with wrong password
+16:56:09,192  INFO main LoginPage:loadMainPage:45 - load main page
+16:56:09,196  INFO main User:setUserDataFromDataBase:40 - data is got from DataBase
+16:56:10,177  INFO main LoginPage:loginAsCorrectUser:52 - logged as correct user
+16:56:13,589  INFO main SpamPage:returnMessageFromSpam:37 - click spam button
+16:56:14,775  INFO main SpamPage:returnMessageFromSpam:40 - first message is chosen
+16:56:14,887  INFO main SpamPage:returnMessageFromSpam:42 - click NotSpam button
+16:56:38,559  INFO main LoginPage:loadMainPage:45 - load main page
+16:56:48,799  INFO main User:setUserDataFromDataBase:40 - data is got from DataBase
+16:56:49,851  INFO main LoginPage:loginAsCorrectUser:52 - logged as correct user
+16:56:52,133  INFO main SendMessagePage:clickWriteMessageButton:55 - click Write Message button
+16:56:56,765  INFO main SendMessagePage:enterAddress:61 - email addresses are entered
+16:56:56,875  INFO main SendMessagePage:enterMessageText:66 - message text is entered
+16:57:04,168  INFO main SendMessagePage:sendMessage:71 - click Send message button
+16:57:15,018  INFO main Wall:postMessage:36 - Message is posted
+16:57:15,393  INFO main Wall:editMessage:51 - Message is edited
+16:57:15,791  INFO main Wall:deleteMessage:65 - Message is deleted
