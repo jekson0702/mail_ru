@@ -6,7 +6,7 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
-import dataBase.User;
+import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 
@@ -15,6 +15,7 @@ public class InboxSteps {
     private InboxPage inboxPage;
     private WebDriver driver;
     private LoginPage loginpage;
+    private Logger logger = Logger.getLogger(InboxSteps.class);
 
     public InboxSteps() {
         loginpage = new LoginPage();
@@ -23,7 +24,7 @@ public class InboxSteps {
     }
 
     @Given("^I am on InboxPage$")
-    public void loginAsCorrectUser() {
+    public void loadInboxPage() {
         loginpage.loadMainPage();
         loginpage.loginAsCorrectUser();
     }
@@ -63,18 +64,18 @@ public class InboxSteps {
         Assert.assertTrue(inboxPage.flagsAreNotPresent());
     }
 
-    @After("@messageToSpamFeature")
+    @After()
     public void afterMessageToSpam() {
         SingletonWebDriver.quitDriver();
     }
-
-    @After("@markMessages")
-    public void afterMarkMessages() {
-        SingletonWebDriver.quitDriver();
-    }
-
-    @After("@uncheckMessages")
-    public void afterClass() {
-        SingletonWebDriver.quitDriver();
-    }
+//
+//    @After("@markMessages")
+//    public void afterMarkMessages() {
+//        SingletonWebDriver.quitDriver();
+//    }
+//
+//    @After("@uncheckMessages")
+//    public void afterUncheckMessages() {
+//        SingletonWebDriver.quitDriver();
+//    }
 }

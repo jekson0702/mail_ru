@@ -1,10 +1,13 @@
 package dataBase;
 
+import org.apache.log4j.Logger;
+
 import java.sql.*;
 
 public class User {
     private String login;
     private String password;
+    private Logger logger = Logger.getLogger(User.class);
 
     public User(String parameters) {
         this.setUserDataFromDataBase(parameters);
@@ -34,7 +37,9 @@ public class User {
                 this.login = rs.getString(2);
                 this.password = rs.getString(3);
             }
+            logger.info("data is got from DataBase");
         } catch (SQLException ex) {
+            logger.error("Error while getting data from dataBase");
             ex.printStackTrace();
         }
     }

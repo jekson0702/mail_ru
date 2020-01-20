@@ -11,8 +11,8 @@ import java.util.List;
 
 public class Waits {
     private static final int TIMEOUT = 10;
-    private static WebDriver driver = SingletonWebDriver.getDriver();
-    JavascriptExecutor executor = (JavascriptExecutor) driver;
+    private WebDriver driver = SingletonWebDriver.getDriver();
+    private JavascriptExecutor executor = (JavascriptExecutor) driver;
 
     public WebElement expectClickable(WebElement webElement) {
         return new WebDriverWait(SingletonWebDriver.getDriver(), TIMEOUT)

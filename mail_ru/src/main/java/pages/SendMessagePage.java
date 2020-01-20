@@ -4,15 +4,29 @@ import SingletonWebDriver.SingletonWebDriver;
 import Waits.Waits;
 import com.applitools.eyes.EyesRunner;
 import com.applitools.eyes.TestResultsSummary;
-import org.openqa.selenium.WebDriver;
+
+import org.apache.log4j.Logger;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.w3c.dom.Document;
+import org.xml.sax.SAXException;
+import parser.DomParser;
+import parser.MessageData;
+
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
+import javax.xml.stream.XMLStreamException;
+import java.io.IOException;
+import java.util.List;
 
 public class SendMessagePage {
-
-    private WebDriver driver = SingletonWebDriver.getDriver();
     private Waits waits = new Waits();
+    private Logger logger = Logger.getLogger(SendMessagePage.class);
+    private MessageData messageData = new MessageData();
+    private static final String MESSAGEDATA_XML = "messagedata.xml";
+    private List<MessageData> messageDataList;
 
     @FindBy(xpath = "//span[contains(text(),'Написать письмо')]")
     private WebElement writeMessageButton;
@@ -32,29 +46,45 @@ public class SendMessagePage {
     private WebElement messageTextField;
 
     public SendMessagePage() {
-        PageFactory.initElements(driver, this);
+        PageFactory.initElements(SingletonWebDriver.getDriver(), this);
+        getDataFromXml();
     }
 
-    public void enterAddress(String address) {
+    public void clickWriteMessageButton() {
         waits.expectClickableAndClick(writeMessageButton);
-        waits.expectClickable(emailInput);
-        emailInput.sendKeys(address);
+        logger.info("click Write Message button");
     }
 
-    public void enterMessageText(String messageText) {
-        messageTextField.sendKeys(messageText);
+    public void enterAddress() {
+        waits.expectClickable(emailInput);
+        emailInput.sendKeys(messageData.getAddress());
+        logger.info("email addresses are entered");
+    }
+
+    public void enterMessageText() {
+        messageTextField.sendKeys(messageData.getMessageText());
+        logger.info("message text is entered");
     }
 
     public void sendMessage() {
         sendMessageButton.click();
-    }
-
-    public boolean sendMessageAlertIsPresent() {
-        return waits.expectVisibilityAndCheck(sendAlert);
+        logger.info("click Send message button");
     }
 
     public boolean visualTestIsPassed(EyesRunner runner) {
         TestResultsSummary allTestResults = runner.getAllTestResults();
         return allTestResults.getAllResults()[0].getTestResults().isPassed();
+    }
+
+    public void getDataFromXml() {
+        try {
+            DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
+            DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
+            Document document = dBuilder.parse(MESSAGEDATA_XML);
+            messageDataList = new DomParser().parse(document);
+            messageData = messageDataList.get(0);
+        } catch (IOException | SAXException
+                | ParserConfigurationException | XMLStreamException exception) {
+        }
     }
 }

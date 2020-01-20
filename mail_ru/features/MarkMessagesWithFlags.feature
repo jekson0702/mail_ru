@@ -1,4 +1,4 @@
-@markMessages
+
 Feature: Mark messages with flags
 
   Scenario: MarkMessagesWithFlags

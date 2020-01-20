@@ -1,4 +1,3 @@
-@uncheckMessages
 Feature: Uncheck messages with flags
 
   Scenario: UncheckMessagesWithFlags

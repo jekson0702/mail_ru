@@ -1,4 +1,3 @@
-@messageToSpamFeature
 Feature: Test move message to spam
 
   Scenario: MessageToSpamTest

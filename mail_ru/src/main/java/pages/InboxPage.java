@@ -2,7 +2,8 @@ package pages;
 
 import SingletonWebDriver.SingletonWebDriver;
 import Waits.Waits;
-import org.openqa.selenium.WebDriver;
+
+import org.apache.log4j.Logger;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -10,8 +11,8 @@ import org.openqa.selenium.support.PageFactory;
 import java.util.List;
 
 public class InboxPage {
-    WebDriver driver = SingletonWebDriver.getDriver();
     Waits waits = new Waits();
+    private Logger logger = Logger.getLogger(InboxPage.class);
 
     @FindBy(xpath = "(//div[contains(@class,'ll-av')])[1]")
     private WebElement firstMessageCheckbox;
@@ -38,15 +39,17 @@ public class InboxPage {
     private WebElement inbox;
 
     public InboxPage() {
-        PageFactory.initElements(driver, this);
+        PageFactory.initElements(SingletonWebDriver.getDriver(), this);
     }
 
     public void chooseMessage() {
         waits.expectClickableAndClick(firstMessageCheckbox);
+        logger.info("first message is chosen");
     }
 
     public void clickToSpam() {
         waits.expectClickableAndClick(toSpamButton);
+        logger.info("click to spam button");
     }
 
     public void markWithFlag(int numberOfMessages) {
@@ -55,6 +58,7 @@ public class InboxPage {
             waits.expectVisibilityOfAllElements(flagedList);
         }
         while (flagedList.size() < numberOfMessages);
+        logger.info("messages are marked with flags");
     }
 
     public void uncheckkWithFlag() {
@@ -64,11 +68,11 @@ public class InboxPage {
             waits.expectVisibilityOfAllElements(flags);
         }
         while (flagedList.size() > 0);
+        logger.info("messages are unchecked with flags");
     }
 
     public boolean toSpamAlertIsPresent() {
         return waits.expectVisibilityAndCheck(spamAlert);
-
     }
 
     public boolean flagsArePresent(int numberOfFlags) {

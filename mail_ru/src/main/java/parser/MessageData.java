@@ -4,6 +4,9 @@ public class MessageData {
     private String address;
     private String messageText;
 
+    public MessageData() {
+    }
+
     public String getAddress() {
         return address;
     }

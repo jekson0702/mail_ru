@@ -3,14 +3,14 @@ package pages;
 import SingletonWebDriver.SingletonWebDriver;
 import Waits.Waits;
 
-import org.openqa.selenium.WebDriver;
+import org.apache.log4j.Logger;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class SpamPage {
-    private WebDriver driver = SingletonWebDriver.getDriver();
     private Waits waits = new Waits();
+    private Logger logger = Logger.getLogger(SpamPage.class);
 
     @FindBy(xpath = "(//div[@class=\"ll-av__container\"])[1]")
     private WebElement firstMessageCheckbox;
@@ -29,14 +29,17 @@ public class SpamPage {
     private WebElement toAnotherFolderAlert;
 
     public SpamPage() {
-        PageFactory.initElements(driver, this);
+        PageFactory.initElements(SingletonWebDriver.getDriver(), this);
     }
 
     public void returnMessageFromSpam() {
         waits.expectClickableAndClick(spamButton);
+        logger.info("click spam button");
         waits.expectVisibility(clearFolderButton);
         waits.expectClickableAndClick(firstMessageCheckbox);
+        logger.info("first message is chosen");
         waits.expectClickableAndClick(notSpamButton);
+        logger.info("click NotSpam button");
     }
 
     public boolean returnFromSpamAlertIsPresents() {

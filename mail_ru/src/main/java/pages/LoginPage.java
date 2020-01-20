@@ -5,6 +5,7 @@ import Waits.Waits;
 
 import configuration.Configuration;
 import dataBase.User;
+import org.apache.log4j.Logger;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -12,6 +13,7 @@ import org.openqa.selenium.support.PageFactory;
 public class LoginPage {
     private Waits waits = new Waits();
     private User user;
+    private Logger logger = Logger.getLogger(LoginPage.class);
 
     @FindBy(id = "mailbox:login")
     private WebElement loginField;
@@ -40,23 +42,27 @@ public class LoginPage {
 
     public void loadMainPage() {
         SingletonWebDriver.getDriver().get(Configuration.getMainUrl());
+        logger.info("load main page");
     }
 
     public void loginAsCorrectUser() {
         user = new User("rightLoginAndPassword");
         enterLogin(user.getLogin());
         enterPassword(user.getPassword());
+        logger.info("logged as correct user");
     }
 
     public void authorizationWithWrongLogin() {
         user = new User("wrongLogin");
         enterLogin(user.getLogin());
+        logger.info("try to login with wrong login");
     }
 
     public void authorizationWithWrongPassword() {
         user = new User("wrongPassword");
         enterLogin(user.getLogin());
         enterPassword(user.getPassword());
+        logger.info("try to login with wrong password");
     }
 
     public void enterLogin(String login) {

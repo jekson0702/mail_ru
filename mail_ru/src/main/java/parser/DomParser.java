@@ -9,6 +9,7 @@ import javax.xml.stream.XMLStreamException;
 import org.w3c.dom.*;
 
 public class DomParser {
+
     public List<MessageData> parse(Document document) throws FileNotFoundException, XMLStreamException {
         NodeList nodeList = document.getElementsByTagName("Message");
         List<MessageData> messageData = new ArrayList<>();
