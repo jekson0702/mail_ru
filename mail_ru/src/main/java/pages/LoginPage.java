@@ -95,6 +95,6 @@ public class LoginPage {
     }
 
     public boolean elementIsPresent(WebElement element) {
-        return waits.expectClickable(element).isDisplayed();
+        return waits.expectVisibilityAndCheck(element);
     }
 }

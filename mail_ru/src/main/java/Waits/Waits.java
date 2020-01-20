@@ -20,17 +20,17 @@ public class Waits {
     }
 
     public void expectVisibility(WebElement webElement) {
-        (new WebDriverWait(driver, TIMEOUT)).
+        new WebDriverWait(driver, TIMEOUT).
                 until(ExpectedConditions.visibilityOf(webElement));
     }
 
     public boolean expectVisibilityAndCheck(WebElement webElement) {
-        return (new WebDriverWait(driver, TIMEOUT)).
+        return new WebDriverWait(driver, TIMEOUT).
                 until(ExpectedConditions.visibilityOf(webElement)).isDisplayed();
     }
 
     public void expectVisibilityOfAllElements(List<WebElement> list) {
-        (new WebDriverWait(driver, TIMEOUT)).
+        new WebDriverWait(driver, TIMEOUT).
                 until(ExpectedConditions.visibilityOfAllElements(list));
     }
 

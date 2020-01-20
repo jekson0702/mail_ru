@@ -4,6 +4,8 @@ import SingletonWebDriver.SingletonWebDriver;
 import Waits.Waits;
 
 import org.apache.log4j.Logger;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -11,6 +13,8 @@ import org.openqa.selenium.support.PageFactory;
 public class SpamPage {
     private Waits waits = new Waits();
     private Logger logger = Logger.getLogger(SpamPage.class);
+    private WebDriver driver = SingletonWebDriver.getDriver();
+    private JavascriptExecutor executor = (JavascriptExecutor) driver;
 
     @FindBy(xpath = "(//div[@class=\"ll-av__container\"])[1]")
     private WebElement firstMessageCheckbox;

@@ -75,3 +75,201 @@
 16:57:15,018  INFO main Wall:postMessage:36 - Message is posted
 16:57:15,393  INFO main Wall:editMessage:51 - Message is edited
 16:57:15,791  INFO main Wall:deleteMessage:65 - Message is deleted
+17:17:30,523  INFO main Wall:postMessage:36 - Message is posted
+17:17:49,174  INFO main LoginPage:loadMainPage:45 - load main page
+17:17:50,500  INFO main User:setUserDataFromDataBase:40 - data is got from DataBase
+17:17:52,220  INFO main LoginPage:loginAsCorrectUser:52 - logged as correct user
+17:18:01,526  INFO main SpamPage:returnMessageFromSpam:37 - click spam button
+17:18:04,793  INFO main SpamPage:returnMessageFromSpam:40 - first message is chosen
+17:18:04,918  INFO main SpamPage:returnMessageFromSpam:42 - click NotSpam button
+17:18:40,471  INFO main Wall:editMessage:51 - Message is edited
+17:18:40,874  INFO main Wall:deleteMessage:65 - Message is deleted
+18:02:18,958  INFO main LoginPage:loadMainPage:45 - load main page
+18:02:19,539 ERROR main User:setUserDataFromDataBase:42 - Error while getting data from dataBase
+18:02:31,474  INFO main LoginPage:loadMainPage:45 - load main page
+18:02:31,476 ERROR main User:setUserDataFromDataBase:42 - Error while getting data from dataBase
+18:02:43,130  INFO main LoginPage:loadMainPage:45 - load main page
+18:02:43,134 ERROR main User:setUserDataFromDataBase:42 - Error while getting data from dataBase
+18:02:44,695  INFO main Wall:postMessage:36 - Message is posted
+18:02:45,184  INFO main Wall:editMessage:51 - Message is edited
+18:02:45,831  INFO main Wall:deleteMessage:65 - Message is deleted
+18:03:54,794  INFO main LoginPage:loadMainPage:45 - load main page
+18:03:55,001 ERROR main User:setUserDataFromDataBase:42 - Error while getting data from dataBase
+18:04:30,009  INFO main LoginPage:loadMainPage:45 - load main page
+18:04:30,253 ERROR main User:setUserDataFromDataBase:42 - Error while getting data from dataBase
+18:05:27,381  INFO main LoginPage:loadMainPage:45 - load main page
+18:05:27,658 ERROR main User:setUserDataFromDataBase:42 - Error while getting data from dataBase
+18:06:02,952  INFO main LoginPage:loadMainPage:45 - load main page
+18:06:03,128 ERROR main User:setUserDataFromDataBase:42 - Error while getting data from dataBase
+18:06:41,717  INFO main LoginPage:loadMainPage:45 - load main page
+18:06:41,869 ERROR main User:setUserDataFromDataBase:42 - Error while getting data from dataBase
+18:08:28,238  INFO main LoginPage:loadMainPage:45 - load main page
+18:08:28,991  INFO main User:setUserDataFromDataBase:40 - data is got from DataBase
+18:08:29,909  INFO main LoginPage:loginAsCorrectUser:52 - logged as correct user
+18:08:43,931  INFO main LoginPage:loadMainPage:45 - load main page
+18:08:43,937  INFO main User:setUserDataFromDataBase:40 - data is got from DataBase
+18:08:44,320  INFO main LoginPage:authorizationWithWrongLogin:58 - try to login with wrong login
+18:09:06,443  INFO main LoginPage:loadMainPage:45 - load main page
+18:09:06,450  INFO main User:setUserDataFromDataBase:40 - data is got from DataBase
+18:09:07,431  INFO main LoginPage:authorizationWithWrongPassword:65 - try to login with wrong password
+18:11:05,488  INFO main LoginPage:loadMainPage:45 - load main page
+18:11:05,764  INFO main User:setUserDataFromDataBase:40 - data is got from DataBase
+18:11:06,823  INFO main LoginPage:loginAsCorrectUser:52 - logged as correct user
+18:11:23,431  INFO main LoginPage:loadMainPage:45 - load main page
+18:11:23,437  INFO main User:setUserDataFromDataBase:40 - data is got from DataBase
+18:11:23,782  INFO main LoginPage:authorizationWithWrongLogin:58 - try to login with wrong login
+18:11:36,497  INFO main LoginPage:loadMainPage:45 - load main page
+18:11:36,503  INFO main User:setUserDataFromDataBase:40 - data is got from DataBase
+18:11:37,678  INFO main LoginPage:authorizationWithWrongPassword:65 - try to login with wrong password
+18:11:57,797  INFO main LoginPage:loadMainPage:45 - load main page
+18:11:58,068  INFO main User:setUserDataFromDataBase:40 - data is got from DataBase
+18:11:59,153  INFO main LoginPage:loginAsCorrectUser:52 - logged as correct user
+18:12:32,968  INFO main LoginPage:loadMainPage:45 - load main page
+18:12:33,193  INFO main User:setUserDataFromDataBase:40 - data is got from DataBase
+18:12:34,152  INFO main LoginPage:loginAsCorrectUser:52 - logged as correct user
+18:14:49,926  INFO main LoginPage:loadMainPage:45 - load main page
+18:14:50,162  INFO main User:setUserDataFromDataBase:40 - data is got from DataBase
+18:14:51,123  INFO main LoginPage:loginAsCorrectUser:52 - logged as correct user
+18:15:27,273  INFO main LoginPage:loadMainPage:45 - load main page
+18:15:27,629  INFO main User:setUserDataFromDataBase:40 - data is got from DataBase
+18:15:28,529  INFO main LoginPage:loginAsCorrectUser:52 - logged as correct user
+18:15:31,479  INFO main InboxPage:chooseMessage:47 - first message is chosen
+18:17:24,582  INFO main LoginPage:loadMainPage:45 - load main page
+18:17:24,863  INFO main User:setUserDataFromDataBase:40 - data is got from DataBase
+18:17:26,017  INFO main LoginPage:loginAsCorrectUser:52 - logged as correct user
+18:17:28,841  INFO main InboxPage:chooseMessage:47 - first message is chosen
+18:19:00,734  INFO main LoginPage:loadMainPage:45 - load main page
+18:19:00,990  INFO main User:setUserDataFromDataBase:40 - data is got from DataBase
+18:19:02,115  INFO main LoginPage:loginAsCorrectUser:52 - logged as correct user
+18:19:05,244  INFO main InboxPage:chooseMessage:47 - first message is chosen
+18:19:05,497  INFO main InboxPage:clickToSpam:52 - click to spam button
+18:20:42,449  INFO main LoginPage:loadMainPage:45 - load main page
+18:20:42,709  INFO main User:setUserDataFromDataBase:40 - data is got from DataBase
+18:20:43,638  INFO main LoginPage:loginAsCorrectUser:52 - logged as correct user
+18:20:47,074  INFO main InboxPage:markWithFlag:61 - messages are marked with flags
+18:20:58,691  INFO main LoginPage:loadMainPage:45 - load main page
+18:20:58,699  INFO main User:setUserDataFromDataBase:40 - data is got from DataBase
+18:20:59,993  INFO main LoginPage:loginAsCorrectUser:52 - logged as correct user
+18:21:02,514  INFO main InboxPage:chooseMessage:47 - first message is chosen
+18:21:02,697  INFO main InboxPage:clickToSpam:52 - click to spam button
+18:21:15,102  INFO main LoginPage:loadMainPage:45 - load main page
+18:21:15,108  INFO main User:setUserDataFromDataBase:40 - data is got from DataBase
+18:21:16,192  INFO main LoginPage:loginAsCorrectUser:52 - logged as correct user
+18:21:20,318  INFO main InboxPage:uncheckkWithFlag:71 - messages are unchecked with flags
+18:29:26,606  INFO main LoginPage:loadMainPage:45 - load main page
+18:29:26,878  INFO main User:setUserDataFromDataBase:40 - data is got from DataBase
+18:29:28,138  INFO main LoginPage:loginAsCorrectUser:52 - logged as correct user
+18:29:42,599  INFO main LoginPage:loadMainPage:45 - load main page
+18:29:42,606  INFO main User:setUserDataFromDataBase:40 - data is got from DataBase
+18:29:42,889  INFO main LoginPage:authorizationWithWrongLogin:58 - try to login with wrong login
+18:29:58,837  INFO main LoginPage:loadMainPage:45 - load main page
+18:29:58,843  INFO main User:setUserDataFromDataBase:40 - data is got from DataBase
+18:30:00,039  INFO main LoginPage:authorizationWithWrongPassword:65 - try to login with wrong password
+18:30:11,844  INFO main LoginPage:loadMainPage:45 - load main page
+18:30:11,849  INFO main User:setUserDataFromDataBase:40 - data is got from DataBase
+18:30:13,319  INFO main LoginPage:loginAsCorrectUser:52 - logged as correct user
+18:30:15,775  INFO main SpamPage:returnMessageFromSpam:37 - click spam button
+18:30:16,629  INFO main SpamPage:returnMessageFromSpam:40 - first message is chosen
+18:30:17,070  INFO main SpamPage:returnMessageFromSpam:42 - click NotSpam button
+18:30:48,860  INFO main LoginPage:loadMainPage:45 - load main page
+18:30:57,304  INFO main User:setUserDataFromDataBase:40 - data is got from DataBase
+18:30:58,355  INFO main LoginPage:loginAsCorrectUser:52 - logged as correct user
+18:31:20,751  INFO main LoginPage:loadMainPage:45 - load main page
+18:31:20,756  INFO main User:setUserDataFromDataBase:40 - data is got from DataBase
+18:31:21,914  INFO main LoginPage:loginAsCorrectUser:52 - logged as correct user
+18:31:25,918  INFO main InboxPage:markWithFlag:61 - messages are marked with flags
+18:31:38,225  INFO main LoginPage:loadMainPage:45 - load main page
+18:31:38,228  INFO main User:setUserDataFromDataBase:40 - data is got from DataBase
+18:31:39,240  INFO main LoginPage:loginAsCorrectUser:52 - logged as correct user
+18:31:44,077  INFO main InboxPage:uncheckWithFlag:71 - messages are unchecked with flags
+18:31:55,631  INFO main LoginPage:loadMainPage:45 - load main page
+18:31:55,637  INFO main User:setUserDataFromDataBase:40 - data is got from DataBase
+18:31:56,660  INFO main LoginPage:loginAsCorrectUser:52 - logged as correct user
+18:31:59,473  INFO main InboxPage:chooseMessage:47 - first message is chosen
+18:31:59,705  INFO main InboxPage:clickToSpam:52 - click to spam button
+18:32:01,928  INFO main Wall:postMessage:36 - Message is posted
+18:32:02,305  INFO main Wall:editMessage:51 - Message is edited
+18:32:02,735  INFO main Wall:deleteMessage:65 - Message is deleted
+18:35:11,856  INFO main LoginPage:loadMainPage:45 - load main page
+18:35:12,119  INFO main User:setUserDataFromDataBase:40 - data is got from DataBase
+18:35:13,140  INFO main LoginPage:loginAsCorrectUser:52 - logged as correct user
+18:35:15,735  INFO main SpamPage:returnMessageFromSpam:37 - click spam button
+18:35:16,836  INFO main SpamPage:returnMessageFromSpam:40 - first message is chosen
+18:35:17,300  INFO main SpamPage:returnMessageFromSpam:42 - click NotSpam button
+18:37:27,672  INFO main LoginPage:loadMainPage:45 - load main page
+18:37:27,935  INFO main User:setUserDataFromDataBase:40 - data is got from DataBase
+18:37:29,022  INFO main LoginPage:loginAsCorrectUser:52 - logged as correct user
+18:37:33,658  INFO main SpamPage:returnMessageFromSpam:37 - click spam button
+18:37:34,588  INFO main SpamPage:returnMessageFromSpam:40 - first message is chosen
+18:37:34,874  INFO main SpamPage:returnMessageFromSpam:42 - click NotSpam button
+18:38:44,947  INFO main LoginPage:loadMainPage:45 - load main page
+18:38:54,416  INFO main User:setUserDataFromDataBase:40 - data is got from DataBase
+18:38:55,471  INFO main LoginPage:loginAsCorrectUser:52 - logged as correct user
+18:41:36,953  INFO main LoginPage:loadMainPage:45 - load main page
+18:41:37,463  INFO main User:setUserDataFromDataBase:40 - data is got from DataBase
+18:41:38,739  INFO main LoginPage:loginAsCorrectUser:52 - logged as correct user
+18:41:41,476  INFO main InboxPage:chooseMessage:47 - first message is chosen
+18:41:41,610  INFO main InboxPage:clickToSpam:52 - click to spam button
+18:42:11,588  INFO main LoginPage:loadMainPage:45 - load main page
+18:42:19,499  INFO main User:setUserDataFromDataBase:40 - data is got from DataBase
+18:42:20,547  INFO main LoginPage:loginAsCorrectUser:52 - logged as correct user
+18:44:30,985  INFO main LoginPage:loadMainPage:45 - load main page
+18:44:38,904  INFO main User:setUserDataFromDataBase:40 - data is got from DataBase
+18:44:39,973  INFO main LoginPage:loginAsCorrectUser:52 - logged as correct user
+18:44:43,093  INFO main SendMessagePage:clickWriteMessageButton:55 - click Write Message button
+18:44:47,188  INFO main SendMessagePage:enterAddress:61 - email addresses are entered
+18:44:47,320  INFO main SendMessagePage:enterMessageText:66 - message text is entered
+18:44:54,036  INFO main SendMessagePage:sendMessage:71 - click Send message button
+18:46:35,234  INFO main LoginPage:loadMainPage:45 - load main page
+18:46:35,607  INFO main User:setUserDataFromDataBase:40 - data is got from DataBase
+18:46:36,434  INFO main LoginPage:loginAsCorrectUser:52 - logged as correct user
+18:46:38,827  INFO main InboxPage:chooseMessage:47 - first message is chosen
+18:46:38,965  INFO main InboxPage:clickToSpam:52 - click to spam button
+18:47:26,869  INFO main LoginPage:loadMainPage:45 - load main page
+18:47:27,219  INFO main User:setUserDataFromDataBase:40 - data is got from DataBase
+18:47:28,611  INFO main LoginPage:loginAsCorrectUser:52 - logged as correct user
+18:47:31,561  INFO main SpamPage:returnMessageFromSpam:41 - click spam button
+18:47:32,483  INFO main SpamPage:returnMessageFromSpam:44 - first message is chosen
+18:47:32,871  INFO main SpamPage:returnMessageFromSpam:46 - click NotSpam button
+18:51:07,548  INFO main LoginPage:loadMainPage:45 - load main page
+18:51:07,788  INFO main User:setUserDataFromDataBase:40 - data is got from DataBase
+18:51:08,715  INFO main LoginPage:loginAsCorrectUser:52 - logged as correct user
+18:51:14,037  INFO main InboxPage:markWithFlag:61 - messages are marked with flags
+18:54:12,356  INFO main LoginPage:loadMainPage:45 - load main page
+18:54:12,620  INFO main User:setUserDataFromDataBase:38 - data is got from DataBase
+18:54:13,532  INFO main LoginPage:loginAsCorrectUser:52 - logged as correct user
+18:54:27,945  INFO main LoginPage:loadMainPage:45 - load main page
+18:54:27,952  INFO main User:setUserDataFromDataBase:38 - data is got from DataBase
+18:54:28,218  INFO main LoginPage:authorizationWithWrongLogin:58 - try to login with wrong login
+18:54:40,569  INFO main LoginPage:loadMainPage:45 - load main page
+18:54:40,573  INFO main User:setUserDataFromDataBase:38 - data is got from DataBase
+18:54:41,886  INFO main LoginPage:authorizationWithWrongPassword:65 - try to login with wrong password
+18:54:54,026  INFO main LoginPage:loadMainPage:45 - load main page
+18:54:54,032  INFO main User:setUserDataFromDataBase:38 - data is got from DataBase
+18:54:55,150  INFO main LoginPage:loginAsCorrectUser:52 - logged as correct user
+18:54:57,618  INFO main SpamPage:returnMessageFromSpam:41 - click spam button
+18:54:59,015  INFO main SpamPage:returnMessageFromSpam:44 - first message is chosen
+18:54:59,370  INFO main SpamPage:returnMessageFromSpam:46 - click NotSpam button
+18:55:22,272  INFO main LoginPage:loadMainPage:45 - load main page
+18:55:29,709  INFO main User:setUserDataFromDataBase:38 - data is got from DataBase
+18:55:30,778  INFO main LoginPage:loginAsCorrectUser:52 - logged as correct user
+18:55:33,298  INFO main SendMessagePage:clickWriteMessageButton:55 - click Write Message button
+18:55:37,360  INFO main SendMessagePage:enterAddress:61 - email addresses are entered
+18:55:37,489  INFO main SendMessagePage:enterMessageText:66 - message text is entered
+18:55:45,424  INFO main SendMessagePage:sendMessage:71 - click Send message button
+18:56:06,299  INFO main LoginPage:loadMainPage:45 - load main page
+18:56:06,305  INFO main User:setUserDataFromDataBase:38 - data is got from DataBase
+18:56:07,504  INFO main LoginPage:loginAsCorrectUser:52 - logged as correct user
+18:56:11,236  INFO main InboxPage:markWithFlag:61 - messages are marked with flags
+18:56:23,169  INFO main LoginPage:loadMainPage:45 - load main page
+18:56:23,173  INFO main User:setUserDataFromDataBase:38 - data is got from DataBase
+18:56:24,582  INFO main LoginPage:loginAsCorrectUser:52 - logged as correct user
+18:56:27,918  INFO main InboxPage:uncheckWithFlag:71 - messages are unchecked with flags
+18:56:40,224  INFO main LoginPage:loadMainPage:45 - load main page
+18:56:40,228  INFO main User:setUserDataFromDataBase:38 - data is got from DataBase
+18:56:41,534  INFO main LoginPage:loginAsCorrectUser:52 - logged as correct user
+18:56:43,964  INFO main InboxPage:chooseMessage:47 - first message is chosen
+18:56:44,091  INFO main InboxPage:clickToSpam:52 - click to spam button
+18:56:46,530  INFO main Wall:postMessage:36 - Message is posted
+18:56:46,883  INFO main Wall:editMessage:51 - Message is edited
+18:56:47,273  INFO main Wall:deleteMessage:65 - Message is deleted

@@ -32,6 +32,4 @@ public class DomParser {
         Node node = nodeList.item(0);
         return node.getNodeValue();
     }
-
-
 }

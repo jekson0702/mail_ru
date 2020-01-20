@@ -17,19 +17,19 @@ public class InboxPage {
     @FindBy(xpath = "(//div[contains(@class,'ll-av')])[1]")
     private WebElement firstMessageCheckbox;
 
-    @FindBy(xpath = "//span[@title=\"Спам\"]")
+    @FindBy(xpath = "//span[contains(@title,\"Спам\")]")
     private WebElement toSpamButton;
 
     @FindBy(xpath = "//*[contains(text(),'Перемещено в спам')]")
     private WebElement spamAlert;
 
-    @FindBy(xpath = "(//button[@title=\"Пометить флажком\"])[1]")
+    @FindBy(xpath = "(//button[contains(@title,\"Пометить флажком\")])[1]")
     private WebElement flag;
 
-    @FindBy(xpath = "//button[@title=\"Пометить флажком\"]")
+    @FindBy(xpath = "//button[contains(@title,\"Пометить флажком\")]")
     private List<WebElement> flags;
 
-    @FindBy(xpath = "//button[@title=\"Снять флажок\"]")
+    @FindBy(xpath = "//button[contains(@title,\"Снять флажок\")]")
     private WebElement deflag;
 
     @FindBy(xpath = "//button[@data-title=\"Снять флажок\" or @title=\"Снять флажок\"]")
@@ -61,7 +61,7 @@ public class InboxPage {
         logger.info("messages are marked with flags");
     }
 
-    public void uncheckkWithFlag() {
+    public void uncheckWithFlag() {
         do {
             waits.expectVisibilityOfAllElements(flagedList);
             waits.expectClickableAndClick(deflag);
@@ -77,7 +77,7 @@ public class InboxPage {
 
     public boolean flagsArePresent(int numberOfFlags) {
         waits.expectVisibilityOfAllElements(flagedList);
-        return (flagedList.size() == numberOfFlags);
+        return (flagedList.size() >= numberOfFlags);
     }
 
     public boolean flagsAreNotPresent() {

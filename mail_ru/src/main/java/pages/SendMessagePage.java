@@ -28,7 +28,7 @@ public class SendMessagePage {
     private static final String MESSAGEDATA_XML = "messagedata.xml";
     private List<MessageData> messageDataList;
 
-    @FindBy(xpath = "//span[contains(text(),'Написать письмо')]")
+    @FindBy(xpath = "//span[contains(@title,'Написать письмо')]")
     private WebElement writeMessageButton;
 
     @FindBy(xpath = "/html/body/div[15]/div[2]/div/div[1]/div[2]/div[3]/div[2]/div/div" +

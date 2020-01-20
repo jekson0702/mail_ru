@@ -1,7 +1,6 @@
 package dataBase;
 
 import org.apache.log4j.Logger;
-
 import java.sql.*;
 
 public class User {
@@ -14,7 +13,6 @@ public class User {
     }
 
     private User() {
-
     }
 
     public String getLogin() {

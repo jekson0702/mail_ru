@@ -6,7 +6,6 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
-import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 
@@ -15,11 +14,10 @@ public class InboxSteps {
     private InboxPage inboxPage;
     private WebDriver driver;
     private LoginPage loginpage;
-    private Logger logger = Logger.getLogger(InboxSteps.class);
 
     public InboxSteps() {
-        loginpage = new LoginPage();
         driver = SingletonWebDriver.getDriver();
+        loginpage = new LoginPage();
         inboxPage = new InboxPage();
     }
 
@@ -56,7 +54,7 @@ public class InboxSteps {
 
     @When("^i uncheck all Flags$")
     public void iUncheckAllFlags() {
-        inboxPage.uncheckkWithFlag();
+        inboxPage.uncheckWithFlag();
     }
 
     @Then("^I see no flags$")
@@ -68,14 +66,4 @@ public class InboxSteps {
     public void afterMessageToSpam() {
         SingletonWebDriver.quitDriver();
     }
-//
-//    @After("@markMessages")
-//    public void afterMarkMessages() {
-//        SingletonWebDriver.quitDriver();
-//    }
-//
-//    @After("@uncheckMessages")
-//    public void afterUncheckMessages() {
-//        SingletonWebDriver.quitDriver();
-//    }
 }

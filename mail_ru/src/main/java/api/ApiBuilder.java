@@ -8,16 +8,11 @@ import java.net.URISyntaxException;
 public class ApiBuilder {
     private URIBuilder uriBuilder;
 
-    public URIBuilder getUriBuilder() {
-        return uriBuilder;
-    }
-
-    public ApiBuilder() throws URISyntaxException {
+    public ApiBuilder() {
     }
 
     public static class builder {
         private ApiBuilder apiBuilder;
-
 
         public builder(String method) throws URISyntaxException {
             apiBuilder = new ApiBuilder();
